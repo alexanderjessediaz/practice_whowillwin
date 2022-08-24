@@ -9,16 +9,16 @@ import {DEVICE_HEIGHT} from '../../styles/util';
 const Loading = () => {
   const navigation = useNavigation<RootNavigationProp>();
 
-  // const goToOnboarding = useCallback(() => {
-  //   navigation.navigate({name: ROOT_ROUTES.ONBOARDING, params: undefined});
-  // }, [navigation]);
-
-  const goToMain = useCallback(() => {
-    navigation.navigate({name: ROOT_ROUTES.MAIN, params: undefined});
+  const goToOnboarding = useCallback(() => {
+    navigation.navigate({name: ROOT_ROUTES.ONBOARDING, params: undefined});
   }, [navigation]);
 
+  // const goToMain = useCallback(() => {
+  //   navigation.navigate({name: ROOT_ROUTES.MAIN, params: undefined});
+  // }, [navigation]);
+
   useEffect(() => {
-    goToMain();
+    goToOnboarding();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

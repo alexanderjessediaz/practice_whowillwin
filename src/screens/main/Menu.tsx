@@ -21,7 +21,7 @@ const MainMenu = () => {
   return (
     <SafeAreaView style={styles.main} edges={['top']}>
       <View style={styles.logoContainer}>
-        <Text>Menu screen</Text>
+        
         {/* <FastImage
           source={{
             uri: Image.resolveAssetSource(
